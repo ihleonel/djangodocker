@@ -5,7 +5,8 @@
 
 ## Como iniciar
 1. Clonar repositorio
-1. Correr el commando `$ docker-compose up --build`
+1. Correr el comando `$ docker-compose up --build`
+1. Iniciar contenedores `$ docker-compose up -d`
 
 ## Nota
 Debido a que django esta corriendo en un contenedor, cada vez que necesitemos correr un comando del mismo (makemigrations, migrate, startapp) se deberá hacer de la siguiente manera:
