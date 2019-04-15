@@ -1,3 +1,4 @@
 from django.contrib import admin
+from djangodocker.blog.models import Entrada
 
-# Register your models here.
+admin.site.register(Entrada)
