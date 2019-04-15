@@ -1,5 +1,7 @@
 # Django - Docker
 ## Dependencias
+1. Python v3.6
+1. Virtualenv v16.0.0
 1. Docker v18.09.4
 1. Docker-compose v1.24.0
 
@@ -7,6 +9,9 @@
 1. Clonar repositorio
 1. Correr el comando `$ docker-compose up --build`
 1. Iniciar contenedores `$ docker-compose up -d`
+1. Crear entorno virtual `$ virtualenv --python=python3.6 env`
+1. Activar entorno virtual `$ source env/bin/activate`
+1. Instalar dependencias `$ pip install -r requirements.txt`
 
 ## Nota
 Debido a que django esta corriendo en un contenedor, cada vez que necesitemos correr un comando del mismo (makemigrations, migrate, startapp) se deberá hacer de la siguiente manera:
