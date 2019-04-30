@@ -14,3 +14,9 @@ services:
       - "8000:8000"
     depends_on:
       - db
+
+networks:
+ default:
+   ipam:
+     config:
+       - subnet: 172.184.0.0/16
