@@ -21,4 +21,5 @@ Debido a que django esta corriendo en un contenedor, cada vez que necesitemos co
 En este ejemplo estariamos creando una nueva app en el proyecto. Notese que en este caso el nombre del contenedor es `web` ya que asi fue definido en el archivo `docker-compose.yml`
 
 ## Changelog
-Se agrega un archivo llamado `settings-docker.py` y se configura que al correr el contenedor se base en ese archivo de configuración. Esto permite correr los comandos `migrate`, `makemigartions`, etc. de django sin necesidad de entrar al contenedor. 
+Se agrega un archivo llamado `docker.py` dentro de una carpeta settings, y se configura que al correr el contenedor se base en ese archivo de configuración. Esto permite correr los comandos `migrate`, `makemigartions`, etc. de django sin necesidad de entrar al contenedor.
+No se debe olvidar que antes de correr en local los comandos es necesario activar el entorno virtual. 
