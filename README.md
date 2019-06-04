@@ -23,3 +23,7 @@ En este ejemplo estariamos creando una nueva app en el proyecto. Notese que en e
 ## Changelog
 Se agrega un archivo llamado `docker.py` dentro de una carpeta settings, y se configura que al correr el contenedor se base en ese archivo de configuración. Esto permite correr los comandos `migrate`, `makemigartions`, etc. de django sin necesidad de entrar al contenedor.
 No se debe olvidar que antes de correr en local los comandos es necesario activar el entorno virtual. 
+
+## TODO
+Crear entorno virtual de manera automatica basado en la version de Python que esta en el contenedor e instalar las dependencias especificadas en requirements.txt
+
