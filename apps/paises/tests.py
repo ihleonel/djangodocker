@@ -2,5 +2,5 @@
 from django.test import TestCase
 
 
-class TestAutor(TestCase):
+class TestPais(TestCase):
     pass
